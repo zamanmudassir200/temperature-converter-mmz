@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TEMPERATURE CONVERTER</h1>
+      <input type="number" id="textbox" value="0" /> <br />
+
+      <div class="units">
+        <div class="cel_to_far">
+          <input type="radio" name="unit" id="toCelcius" />
+          <label for="toCelcius">Celcius to Farhanheit </label><br />
+        </div>
+        <div class="far_to_cel">
+          <input type="radio" name="unit" id="toFarhanhiet" />
+          <label for="toFarhanhiet">Farhanheit to Celcius </label><br />
+        </div>
+      </div>
+      <!-- <div class="units">
+        <div class="cel_far"></div>
+        <div class="far_to_cel"></div>
+      </div> -->
+
+      <button onclick="calculate()">Calculate</button>
+      <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
